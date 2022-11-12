@@ -1,0 +1,74 @@
+body {
+    background: #f7f7f7;
+
+}
+.product-category {
+    font-size: 36px;
+    text-align: center;
+    color: rgb(0, 92, 72);
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.product {
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25), 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 24%;
+}
+.product:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.20), 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.product-image {
+    width: 100%;
+    margin: 0 auto;
+}
+.product-list {
+    display: flex;
+    justify-content: space-around;
+}
+.title {
+    font-size: 30px;
+    transition: 0.5s ease-in;
+}
+.title:hover {
+    color: green
+}
+.product-description {
+    color: rgb(59, 59, 59)
+}
+.product-price {
+    font-size: 20px;
+    color: rgb(3, 83, 83)
+}
+.product-price:after {
+    content: ".00";
+}
+.buy {
+    width: 100%;
+    background-color: rgb(1, 28, 36);
+    color: #ffffff;
+    font-weight: bolder;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px 0px;
+}
+
+/* Custom Animations (Blinking Heading)*/
+.product-category {
+    animation: blinkText 1s infinite;
+    position: relative;
+}
+
+@keyframes blinkText {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
